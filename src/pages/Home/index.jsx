@@ -45,7 +45,7 @@ export function Home() {
   return (
     <div className='Container'>
       <header>
-        <h1> Olá meu mano </h1>
+        <h1> Olá </h1>
 
         <div>
           <strong>{user.name}</strong>
