@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import './styles.css';
 import { Card } from '../../components/Card';
+import { AiOutlineDelete } from "react-icons/ai";
 
 export function Home() {
 
@@ -24,6 +25,9 @@ export function Home() {
 
     setMalandros(dadosDoMalandroAnterior => [...dadosDoMalandroAnterior, dadosDoMalandro]);
   }
+  // function deleteMalandro(){
+    
+  // }
 
   useEffect(() => {
     // aqui fica as ações
@@ -41,7 +45,7 @@ export function Home() {
   return (
     <div className='Container'>
       <header>
-        <h1> Olá meu mano </h1>
+        <h1> Olá </h1>
 
         <div>
           <strong>{user.name}</strong>
@@ -59,6 +63,10 @@ export function Home() {
 
       <button type='button' onClick={addNovoMalandro}>
         Adicionar
+      </button>
+
+      <button className='buttonDelete' type='button'>
+        <AiOutlineDelete />
       </button>
 
 

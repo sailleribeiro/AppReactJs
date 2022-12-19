@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #280044;
+}
+
+body {
+    background: linear-gradient(45deg, #210138, #2b0249, #7003be);
 }
 
 body,
